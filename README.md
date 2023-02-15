@@ -73,3 +73,36 @@ If it does not return a version number, then you can run the following command t
 `yarn dev`
 
 Note: Once the web application server is running, you can access the web application via http://localhost:3011/ on your browser.
+
+the website will look like this
+
+![Screenshot (646)](https://user-images.githubusercontent.com/59764125/219006564-efb284b9-f52a-45cf-b5fd-120b1f094811.png)
+
+* after that you need to setup the API key from circle account that we previously created.
+
+1. Go to the Circle account home page then navigate to developer tab then click the GET NEW API KEY button then copy the generated the API secret key.
+2. next step is to insert the API key that you copied. Then, click the settings icon in the top right hand corner. It will open the right side menu where you need to paste your API key in the “Your API Key” field.
+3. After inserting the API key, you can make a card payment. Returning to the main page, click on “Charge Flow”.
+4. You now have a payment form where you need to fill in the card information. Don't worry, you won’t need to use your payment cards for this step. Instead, you can use one of the test cards provided by Circle. Simply click the “PREFILL FORM” button (refer to image above) and select one of the options, which will automatically fill in the card and user details. For the amount, we will enter 9.99 Click on "MAKE PAYMENT" to submit the form.
+
+![Screenshot (647)](https://user-images.githubusercontent.com/59764125/219007752-d32f7f35-1fa7-41e7-a40a-be5ce3847804.png)
+
+* In the next page, you should see that the payment status is confirmed. You will need to copy your payment ID for testing the transaction details using the Circle Payment API in postman tool.
+
+Step 4: Check the wallet by Making an API Call using Postman
+
+This step will guide you in retrieving the status and other information about card payment transactions. To do this, you will need to open Postman which was previously installed.
+
+1. On your Postman create a new API request then set the type as GET
+2. In the new request tab, you will need to set the API key for the request. Firstly, in the “authorization” tab click on the dropdown box beside the “Type” text. In that dropdown menu, select “Bearer Token”. In the Token field, enter your API key that you copied from the circle account developer tab.
+3. Next, enter the following request URL for Postman to call: https://api-sandbox.circle.com/v1/payments/${PAYMENT_ID} 
+Replace “${PAYMENT_ID}” with the payment ID that you copied in the previously
+4. Next, perform the API call by clicking the “Send” button on the right.
+
+* Once you have sent the API call, you should receive a response that is similar to the image below. In the event your status says 'confirmed', click on the "Send" button once more.
+
+![postman](https://user-images.githubusercontent.com/59764125/219009596-400e1963-02ef-4828-b393-86c64f03f134.png)
+
+* From this response, you can see that the payment status is “paid”. This means that the payment has been confirmed and the money has been transferred. You can also see that it provides details of the transaction such as the amount, fees involved, timestamps, verification status as well as any metadata provided during the API call.
+
+# You have reached the end! now you tried to use the one of the Payment API to check the details of the card payment to your circle wallet.
