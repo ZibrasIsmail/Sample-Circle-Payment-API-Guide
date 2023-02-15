@@ -25,6 +25,6 @@ To use Circle Payment API, developers need to create an account with Circle and 
 
 Step 1: Set up a Circle API account
 
-Before you can use the Circle Payments API, you need to create a Circle API account. You can sign up for an account at https://developers.circle.com/signup. Once you have an account, you will be able to access the API key and secret that you need to make API requests.
+Before you can use the Circle Payments API, you need to create a Circle API account. You can sign up for an account at [https://developers.circle.com/signup](https://app-sandbox.circle.com/signup/sandbox). Once you have an account, you will be able to access the API key and secret that you need to make API requests.
 
 * 
