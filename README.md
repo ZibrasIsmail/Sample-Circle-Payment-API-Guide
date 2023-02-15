@@ -45,7 +45,7 @@ Step 3: Making Card Top Up in the Sandbox Environment to the Circle wallet
 To understand how card payment works with Circle Payment API, we will be using a sample web application provided by Circle. We first need to install several programs. 
 
 The first program to install is Git. Git is a distributed version control system that is used to track changes in files. For this quest, we will be using Git to clone the repository of the web application to show how card payment works in the sandbox environment. Cloning in Git is basically downloading a local copy of that online repository onto your file system. To check if you have installed Git, you can run the following command in your terminal or command line.
-# git -v
+`git -v`
 
 The next program to install is Node.js which is needed to run the web application. You can check if you have already installed Node.js using the command.
 # node -v
