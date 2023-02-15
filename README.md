@@ -105,4 +105,4 @@ Replace “${PAYMENT_ID}” with the payment ID that you copied in the previousl
 
 * From this response, you can see that the payment status is “paid”. This means that the payment has been confirmed and the money has been transferred. You can also see that it provides details of the transaction such as the amount, fees involved, timestamps, verification status as well as any metadata provided during the API call.
 
-# You have reached the end! now you tried to use the one of the Payment API to check the details of the card payment to your circle wallet.
+# You have reached the end! now you tried to use the one of the Payment API to check the details of the transaction which was made by card payment to your circle wallet.
