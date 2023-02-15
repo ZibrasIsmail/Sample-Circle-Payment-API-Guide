@@ -2,7 +2,7 @@
 
 A simple circle payment API to use circle payment API to setting up the wallet and top up the wallet for development work
 
-# Steps to access the Circle API and set up the wallet and top up the wallet 
+# Steps to use the Circle one of the Payment API to check the transaction details which was made by card payment to top up the wallet.
 Step 1: Set up a Circle API account
 Step 2: Set up Postman
 Step 3: Making Card Top Up in the Sandbox Environment to the Circle wallet
